@@ -21,7 +21,7 @@
        </target>
 
         <target name="war" description="WARs the Task">
-            <war destfile="StudentManagementSystem.war" basedir="build/classes"/>
+            <war destfile="StudentManagementSystem.war" basedir="build/classes" needxmlfile="false"/>
         </target>
     <!--
 
