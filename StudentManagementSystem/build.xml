@@ -12,16 +12,16 @@
     <description>Builds, tests, and runs the project StudentManagementSystem.</description>
     <import file="nbproject/build-impl.xml"/>
         <target name="clean" description="Delete all generated files">
-                <delete dir="classes"/>
+                <delete dir="build/classes"/>
                         <delete file="StudentManagementSystem.war"/>
                             </target>
 
         <target name="compile" description="Compiles the Task">
-            <javac srcdir="src" destdir="classes"/>
+            <javac srcdir="src" destdir="build/classes"/>
        </target>
 
         <target name="war" description="WARs the Task">
-            <war destfile="StudentManagementSystem.war" basedir="classes"/>
+            <war destfile="StudentManagementSystem.war" basedir="build/classes"/>
         </target>
     <!--
 
