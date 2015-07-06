@@ -21,7 +21,7 @@
        </target>
 
         <target name="war" description="WARs the Task">
-            <jar destfile="StudentManagementSystem.war" basedir="classes"/>
+            <war destfile="StudentManagementSystem.war" basedir="classes"/>
         </target>
     <!--
 
