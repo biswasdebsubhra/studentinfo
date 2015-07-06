@@ -8,7 +8,7 @@
 <!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
 <!-- in the project's Project Properties dialog box.-->
 <!-- in the project's Project chnaged -->
-<project name="StudentManagementSystem" default="default" basedir=".">
+<project name="StudentManagementSystem" default="war" basedir=".">
     <description>Builds, tests, and runs the project StudentManagementSystem.</description>
     <import file="nbproject/build-impl.xml"/>
     <!--
