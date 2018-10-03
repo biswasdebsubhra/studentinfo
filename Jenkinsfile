@@ -16,5 +16,6 @@ pipeline {
 !/*.hdml, !/*.hsql, !/*.ht, !/*.hta, !/*.htc, !/*.htd, !/*.war, !/*.ear,
 !/*.htmls, !/*.ihtml, !/*.mht, !/*.mhtm, !/*.mhtml, !/*.ssi, !**/*.stm,
 !/*.stml, !/*.ttml, !/*.txn, !/*.xhtm, !/*.xhtml, !/*.class, !*/*.iml, !Checkmarx/Reports/*.*''', fullScanCycle: 10, groupId: 'a07f41c4-7fc3-4d22-8d9b-d324cbeec9db', includeOpenSourceFolders: '', osaArchiveIncludePatterns: '*.zip, .war, .ear, .tgz', osaInstallBeforeScan: false, password: '{AQAAABAAAAAQFg8RrOwjdT8YaWu/BWtlSX48R0vMsP5gyokfjBoklzY=}', preset: '36', projectName: 'checkmarx-test', serverUrl: 'https://securecode.cengage.info', sourceEncoding: '1', username: ''])
-}
+            }
+          }
 }
