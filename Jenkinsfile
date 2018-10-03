@@ -1,5 +1,9 @@
-node {
-stage('Build') {
+pipeline {
+agent any
+stage('Preparation') { 
+      git credentialsId: '196cd505-8bcb-4669-9273-80ee40c231ca', url: 'http://stash.corp.web:7990/scm/clue/clue-math-product-services.git'
+      }
+stage('build') {
 step([$class: 'CxScanBuilder', comment: '', credentialsId: '', excludeFolders: '', excludeOpenSourceFolders: '', exclusionsSetting: 'global', failBuildOnNewResults: false, filterPattern: '''!**/_cvs/**/, !/.svn/**/, !/.hg/**/, !/.git/**/, !/.bzr/**/, !/bin/**/,
 !/obj/**/, !/backup/**/, !/.idea/**/, !/*.DS_Store, !/*.ipr, !*/*.iws,
 !/*.bak, !/*.tmp, !/*.aac, !/*.aif, !/*.iff, !/*.m3u, !/*.mid, !/*.mp3,
